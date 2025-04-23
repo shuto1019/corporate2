@@ -30,28 +30,204 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 
 		<!-- css -->
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 	<body>
-		<header>
-			<ul class="list">
-				<li class="list__item">
-					<a href="#" class="list__item-link active">リンクA</a>
-				</li>
-				<li class="list__item">
-					<a href="#" class="list__item-link">リンクB</a>
-				</li>
-				<li class="list__item active">
-					<a href="#" class="list__item-link">リンクC</a>
-				</li>
-				<li class="list__item">
-					<a href="#" class="list__item-link">リンクD</a>
-				</li>
-				<li class="list__item">
-					<a href="#" class="list__item-link">リンクE</a>
-				</li>
-			</ul>
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__main">
+					<div class="header__logo">
+						<a href="#" class="header__logo-link">
+						  <img src="./img/logo.svg" alt="" class="header__logo-img" />
+						</a>
+					  </div>
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="list-item">NEWS</li>
+							<li class="list-item">ABOUT</li>
+							<li class="list-item">BUSINESS</li>
+							<li class="list-item">COMPANY</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__contact">
+					<a href="#" class="link">お問い合わせ</a>
+				</div>
+			</div>
 		</header>
+		<section class="mainvisual">
+			<img src="./img/mainvisual.jpg" alt="" class="mainvisual__img">
+		</section>
+		<section class="news">
+			<div class="news__inner">
+			  <div class="news__header">
+				<h2 class="news__title">NEWS</h2>
+				<p class="news__subtitle">ニュース</p>
+				<p class="news__border"></p>
+			  </div>
+			  <div class="news__list">
+				<div class="border-none news__item">
+				  <div class="news__item-meta">
+					<p class="news__date">2025.04.10</p>
+					<p class="news__category">お知らせ</p>
+				  </div>
+				  <div class="news__item-text">
+					<p>タイトルタイトルタイトルタイトル</p>
+				  </div>
+				</div>
+				<div class="news__item">
+					<div class="news__item-meta">
+					  <p class="news__date">2025.04.10</p>
+					  <p class="news__category">お知らせ</p>
+					</div>
+					<div class="news__item-text">
+					  <p>タイトルタイトルタイトルタイトル</p>
+					</div>
+				  </div>
+				  <div class="news__item">
+					<div class="news__item-meta">
+					  <p class="news__date">2025.04.10</p>
+					  <p class="news__category">お知らせ</p>
+					</div>
+					<div class="news__item-text">
+					  <p>タイトルタイトルタイトルタイトル</p>
+					</div>
+				  </div>
+			  </div>
+			</div>
+		  
+		</section>
+		<section class="about">
+			<div class="about__inner">
+				<div class="about__img-block">
+					<img src="./img/about.jpg" alt="" class="about__img">
+				</div>
+				<div class="about__detail-block">
+					<div class="about__header">
+						<h2 class="about__title">ABOUT</h2>
+						<p class="about__subtitle">私たちについて</p>
+						<p class="about__border"></p>
+					</div>
+					<div class="about__text">
+						<p class="text">
+							テキストテキストテキストテキストテキストテキスト テキストテキストテキ ストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト テキストテキストテキ ストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト テキストテキストテキ ストテキストテキストテキスト
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="business">
+			<div class="business__inner">
+				<div class="business__header">
+					<h2 class="business__title">BUSINESS</h2>
+					<p class="business__subtitle">事業内容</p>
+					<p class="business__border"></p>
+				</div>
+				<div class="business__list">
+					<div class="business__items">
+						<div class="business__item">
+							<p class="item-title">Web制作・マーケティング</p>
+							<img src="./img/business1.jpg" alt="" class="item-img">
+						</div>
+						<div class="business__item">
+							<p class="item-title">インターネットメディア事業</p>
+							<img src="./img/business2.jpg" alt="" class="item-img">
+						</div>
+					</div>
+					<div class="business__items">
+						<div class="business__item">
+							<p class="item-title">プロモーション企画・制作</p>
+							<img src="./img/business3.jpg" alt="" class="item-img">
+						</div>
+						<div class="business__item">
+							<p class="item-title">ソーシャル企画・運営</p>
+							<img src="./img/business4.jpg" alt="" class="item-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="company">
+			<div class="company__inner">
+				<div class="company__detail-block">
+					<div class="company__header">
+						<h2 class="about__title">COMPANY</h2>
+						<p class="about__subtitle">会社情報</p>
+						<p class="about__border"></p>
+					</div>
+					<div class="company__detail">
+						<ul class="company__detail-list">
+							<li class="detail-item">
+								<div class="item-title">
+									<p class="title"></p>
+								</div>
+								<div class="item-text">
+									<p class="text"></p>
+								</div>
+							</li>
+							<li class="detail-item">
+								<div class="item-title">
+									<p class="title"></p>
+								</div>
+								<div class="item-text">
+									<p class="text"></p>
+								</div>
+							</li>
+							<li class="detail-item">
+								<div class="item-title">
+									<p class="title"></p>
+								</div>
+								<div class="item-text">
+									<p class="text"></p>
+								</div>
+							</li>
+							<li class="detail-item">
+								<div class="item-title">
+									<p class="title"></p>
+								</div>
+								<div class="item-text">
+									<p class="text"></p>
+								</div>
+							</li>
+							<li class="detail-item">
+								<div class="item-title">
+									<p class="title"></p>
+								</div>
+								<div class="item-text">
+									<p class="text"></p>
+								</div>
+							</li>
+							<li class="detail-item">
+								<div class="item-title">
+									<p class="title"></p>
+								</div>
+								<div class="item-text">
+									<p class="text"></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer__inner">
+				<div class="footer__main">
+					<div class="footer__logo">
+						<img src="./img/logo.svg" alt="" class="logo">
+					</div>
+					<div class="footer__adress">
+						<p class="adress">
+							Web Entertainment Design Inc.<br> West Building 3F<br> 9-99 Sakuragaokacho Shibuya-ku<br> Tokyo, Japan 150-0031<br> T/99-9999-9999
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<p class="copyright">&copy; Web Entertainment Design Inc.
+				</p>
+			</div>
+		</footer>
 		<script src="./js/main.js"></script>
 		<!-- jsファイル -->
 	</body>

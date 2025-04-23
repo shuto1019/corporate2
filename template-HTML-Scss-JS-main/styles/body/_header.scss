@@ -1,0 +1,47 @@
+@charset "utf-8";
+@use "../common/functions" as *;
+@use "../common/variables" as *;
+@use "../common/mixins" as *;
+
+.header {
+  height: vw(80);
+  .header__inner {
+    height: vw(80);
+    padding-left: vw(91);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__main {
+      display: flex;
+      gap: vw(59.61);
+      .header__logo {
+        .header__logo-img {
+          width: vw(100.39);
+          height: vw(25.68);
+        }
+      }
+      .header__nav {
+        .header__nav-list {
+          display: flex;
+          gap: vw(30);
+          .list-item {
+            font-size: vw(14);
+          }
+        }
+      }
+    }
+    .header__contact {
+      height: vw(80);
+      width: vw(200);
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .link {
+        color: white;
+        font-size: vw(12);
+      }
+    }
+  }
+}
+

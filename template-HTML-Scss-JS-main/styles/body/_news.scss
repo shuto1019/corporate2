@@ -1,0 +1,45 @@
+@charset "utf-8";
+@use "../common/functions" as *;
+@use "../common/variables" as *;
+@use "../common/mixins" as *;
+
+
+.border-none {
+    border: none;
+  }
+  
+  .news {
+    .news__inner {
+      padding: vw(130) vw(261) vw(133) vw(200);
+  
+      .news__header {
+        margin-bottom: vw(53);
+  
+        .news__title {
+          font-size: vw(36);
+          margin-bottom: vw(21);
+        }
+  
+        .news__subtitle {
+          font-size: vw(14);
+          margin-bottom: vw(40);
+        }
+  
+        .news__border {
+          width: vw(40);
+          border-top: 1px solid black;
+        }
+      }
+  
+      .news__list {
+        display: flex;
+  
+        .news__item {
+          border-left: 1px solid black;
+          padding-left: vw(20);
+          padding-right: vw(80);
+        }
+      }
+    }
+  }
+  

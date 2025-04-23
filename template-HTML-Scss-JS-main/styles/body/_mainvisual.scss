@@ -1,0 +1,10 @@
+@charset "utf-8";
+@use "../common/functions" as *;
+@use "../common/variables" as *;
+@use "../common/mixins" as *;
+
+.mainvisual__img {
+    height: vw(600);
+    width: vw(1400);
+    object-fit: cover;
+}
