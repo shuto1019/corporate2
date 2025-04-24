@@ -14,10 +14,14 @@
     .header__main {
       display: flex;
       gap: vw(59.61);
-      .header__logo {
-        .header__logo-img {
-          width: vw(100.39);
-          height: vw(25.68);
+      .header__main-link {
+        .header__logo {
+          display: flex;
+          align-items: center;
+          .header__logo-img {
+            width: vw(100.39);
+            height: vw(25.68);
+          }
         }
       }
       .header__nav {
