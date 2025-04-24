@@ -3,10 +3,6 @@
 @use "../common/variables" as *;
 @use "../common/mixins" as *;
 
-
-.border-none {
-    border: none;
-  }
   
   .news {
     .news__inner {
@@ -33,13 +29,55 @@
   
       .news__list {
         display: flex;
-  
         .news__item {
           border-left: 1px solid black;
           padding-left: vw(20);
           padding-right: vw(80);
+          .news__item-inner {
+            width: vw(253);
+          .news__item-meta {
+            display: flex;
+            align-items: center;
+            gap: vw(26);
+            margin-bottom: vw(22);
+            .news__date {
+                font-size: vw(14);
+            }
+            .news__category {
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .category {
+                    color: white;
+                    font-size: vw(12);
+                    padding: vw(5) vw(7) vw(3) vw(7);
+                }
+            }
+
+          }
+          .news__item-text {
+            font-size: vw(16);
+          }
+          .news__item-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: vw(253);
+            height: vw(40);
+            background-color: black;
+            margin-top: vw(20);
+            .link {
+              color: white;
+              font-size: vw(12);
+            }
+          }
+          }
         }
-      }
+        .border-none {
+            border: none;
+        }
     }
   }
+}
   
