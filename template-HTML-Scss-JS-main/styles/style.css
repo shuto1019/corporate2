@@ -514,6 +514,12 @@ svg {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+  .mainvisual__img {
+    width: 100vw;
+    height: 160vw;
+  }
+}
 
 .news .news__inner {
   padding: 9.2857142857vw 18.6428571429vw 9.5vw 14.2857142857vw;
