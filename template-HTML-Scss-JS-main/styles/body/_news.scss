@@ -7,35 +7,62 @@
   .news {
     .news__inner {
       padding: vw(130) vw(261) vw(133) vw(200);
-  
+      @include sp(){
+        padding: vw_sp(90) vw_sp(106) vw_sp(95) vw_sp(16);
+      }
       .news__header {
         margin-bottom: vw(53);
-  
+        @include sp(){
+          margin-bottom: vw_sp(48);
+        }
         .news__title {
           font-size: vw(36);
           letter-spacing: vw(10.8);
           margin-bottom: vw(21);
+
+          @include sp(){
+            font-size: vw_sp(36);
+            letter-spacing: vw_sp(10.8);
+            margin-bottom: vw_sp(21);
+          }
         }
   
         .news__subtitle {
           font-size: vw(14);
           margin-bottom: vw(40);
+          @include sp(){
+            font-size: vw_sp(14);
+            margin-bottom: vw_sp(40);
+          }
         }
   
         .news__border {
           width: vw(40);
           border-top: 1px solid black;
+          @include sp(){
+            width: vw_sp(40);
+          }
         }
       }
   
       .news__list {
         display: flex;
+        @include sp(){
+          display: block;
+        }
         .news__item {
           border-left: 1px solid black;
           padding-left: vw(20);
           padding-right: vw(80);
+          @include sp(){
+            border: none;
+          }
           .news__item-inner {
             width: vw(253);
+            @include sp(){
+              width: vw_sp(253);
+              margin-bottom: vw_sp(51);
+            }
           .news__item-meta {
             display: flex;
             align-items: center;
@@ -43,6 +70,9 @@
             margin-bottom: vw(22);
             .news__date {
                 font-size: vw(14);
+                @include sp(){
+                  font-size: vw_sp(14);
+                }
             }
             .news__category {
                 background-color: black;
@@ -53,12 +83,19 @@
                     color: white;
                     font-size: vw(12);
                     padding: vw(5) vw(7) vw(3) vw(7);
+
+                    @include sp(){
+                      font-size: vw_sp(12);
+                    }
                 }
             }
 
           }
           .news__item-text {
             font-size: vw(16);
+            @include sp(){
+              font-size: vw_sp(16);
+            }
           }
           .news__item-link {
             display: flex;
