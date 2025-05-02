@@ -43,15 +43,15 @@
 					</a>
 					<nav class="header__nav">
 						<ul class="header__nav-list">
-							<li class="list-item">NEWS</li>
-							<li class="list-item">ABOUT</li>
-							<li class="list-item">BUSINESS</li>
-							<li class="list-item">COMPANY</li>
+							<a href="#"><li class="list-item">NEWS</li></a>
+							<a href="#"><li class="list-item">ABOUT</li></a>
+							<a href="#"><li class="list-item">BUSINESS</li></a>
+							<a href="#"><li class="list-item">COMPANY</li></a>
 						</ul>
 					</nav>
 				</div>
 				<div class="header__contact">
-					<a href="#" class="link">お問い合わせ</a>
+					<a href="#" class="header__contact-link"><p class="link">お問い合わせ</p></a>
 				</div>
 			</div>
 		</header>
@@ -63,7 +63,7 @@
 			  <div class="news__header">
 				<h2 class="news__title">NEWS</h2>
 				<p class="news__subtitle">ニュース</p>
-				<p class="news__border"></p>
+				<span class="news__border"></span>
 			  </div>
 			  <div class="news__list">
 				<div class="border-none news__item">
@@ -124,7 +124,7 @@
 					<div class="about__header">
 						<h2 class="about__title">ABOUT</h2>
 						<p class="about__subtitle">私たちについて</p>
-						<p class="about__border"></p>
+						<span class="about__border"></span>
 					</div>
 					<div class="about__text">
 						<p class="text">
@@ -139,7 +139,7 @@
 				<div class="business__header">
 					<h2 class="business__title">BUSINESS</h2>
 					<p class="business__subtitle">事業内容</p>
-					<p class="business__border"></p>
+					<span class="business__border"></span>
 				</div>
 				<div class="business__list">
 					<div class="business__items paddding__top-100">
@@ -172,7 +172,7 @@
 						<div class="company__header">
 							<h2 class="company__title">COMPANY</h2>
 							<p class="company__subtitle">会社情報</p>
-							<p class="company__border"></p>
+							<span class="company__border"></span>
 						</div>
 						<ul class="company__detail-list">
 							<li class="detail-item">
@@ -196,7 +196,7 @@
 									<p class="title">代表</p>
 								</div>
 								<div class="item-text">
-									<p class="text">ＸＸＸＸＸＸ</p>
+									<p class="text">xxxxxxx</p>
 								</div>
 							</li>
 							<li class="detail-item">
@@ -229,7 +229,7 @@
 						</ul>
 					</div>
 					<div class="company__img-block">
-						<img src="./img/company.jpg" alt="" class="company__ing">
+						<img src="./img/company.jpg" alt="" class="company__img">
 					</div>
 				</div>
 			</div>
@@ -247,8 +247,7 @@
 					</div>
 				</div>
 				<div class="footer__copyright">
-					<p class="copyright">&copy; Web Entertainment Design Inc.
-					</p>
+					<small class="copyright">&copy; Web Entertainment Design Inc.</small>
 				</div>
 			</div>
 		</footer>

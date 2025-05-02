@@ -39,6 +39,7 @@
         .news__border {
           width: vw(40);
           border-top: 1px solid black;
+          display: block; 
           @include sp(){
             width: vw_sp(40);
           }

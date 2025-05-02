@@ -5,16 +5,15 @@
 
 .company {
     .company__inner {
-        padding: 0  0 vw(110) vw(200);
+        padding: 0  vw(200) vw(110) vw(200);
 
         .company__detail-block {
             display: flex;
-            justify-content: space-between;
             .company__detail {
                 width: vw(567);
                 height: vw(640);
                 background-color: white;
-                padding: vw(110) 0 vw(104) vw(62);
+                padding: vw(110) vw(143) vw(104) vw(62);
                 .company__header {
                     margin-bottom: vw(53);
               
@@ -32,6 +31,7 @@
                     .company__border {
                       width: vw(40);
                       border-top: 1px solid black;
+                      display: block; 
                     }
                 }
                 .company__detail-list {
@@ -57,12 +57,10 @@
             .company__img-block {
                 width: vw(547);
                 height: vw(640);
-                position: relative;
 
-                .company__ing {
-                    position: absolute;
-                    right: vw(200);
-                    top: vw(115);
+                .company__img {
+                    margin-top: vw(115);
+                    margin-left: -114px;
                     width: vw(547);
                     height: vw(400);
                     object-fit: cover;

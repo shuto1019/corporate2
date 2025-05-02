@@ -68,9 +68,16 @@
       @include sp {
         display: none;
       }
-      .link {
-        color: white;
-        font-size: vw(12);
+      .header__contact-link {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .link {
+          color: white;
+          font-size: vw(12);
+        }
       }
     }
   }

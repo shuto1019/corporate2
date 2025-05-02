@@ -503,7 +503,14 @@ svg {
     display: none;
   }
 }
-.header .header__inner .header__contact .link {
+.header .header__inner .header__contact .header__contact-link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__inner .header__contact .header__contact-link .link {
   color: white;
   font-size: 0.8571428571vw;
 }
@@ -562,6 +569,7 @@ svg {
 .news .news__inner .news__header .news__border {
   width: 2.8571428571vw;
   border-top: 1px solid black;
+  display: block;
 }
 @media screen and (max-width: 768px) {
   .news .news__inner .news__header .news__border {
@@ -655,9 +663,21 @@ svg {
   gap: 5vw;
   padding: 0 6.9285714286vw 9.5714285714vw 0;
 }
+@media screen and (max-width: 768px) {
+  .about .about__inner {
+    display: block;
+    padding: 0 0 25.0666666667vw 0;
+  }
+}
 .about .about__inner .about__img-block {
   width: 54.2857142857vw;
   height: 28.5714285714vw;
+}
+@media screen and (max-width: 768px) {
+  .about .about__inner .about__img-block {
+    width: 100vw;
+    height: 80vw;
+  }
 }
 .about .about__inner .about__img-block .about__img {
   width: 54.2857142857vw;
@@ -665,9 +685,20 @@ svg {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+  .about .about__inner .about__img-block .about__img {
+    width: 100vw;
+    height: 80vw;
+  }
+}
 .about .about__inner .about__detail-block {
   width: 45.7142857143vw;
-  padding-top: 14.2857142857vw;
+  padding: 14.2857142857vw 4.2666666667vw 0 4.2666666667vw;
+}
+@media screen and (max-width: 768px) {
+  .about .about__inner .about__detail-block {
+    width: 100%;
+  }
 }
 .about .about__inner .about__detail-block .about__header {
   margin-bottom: 3.7857142857vw;
@@ -677,16 +708,40 @@ svg {
   letter-spacing: 0.7714285714vw;
   margin-bottom: 1.5vw;
 }
+@media screen and (max-width: 768px) {
+  .about .about__inner .about__detail-block .about__header .about__title {
+    font-size: 9.6vw;
+    letter-spacing: 2.88vw;
+    margin-bottom: 5.6vw;
+  }
+}
 .about .about__inner .about__detail-block .about__header .about__subtitle {
   font-size: 1vw;
   margin-bottom: 2.8571428571vw;
 }
+@media screen and (max-width: 768px) {
+  .about .about__inner .about__detail-block .about__header .about__subtitle {
+    font-size: 3.7333333333vw;
+    margin-bottom: 10.6666666667vw;
+  }
+}
 .about .about__inner .about__detail-block .about__header .about__border {
   width: 2.8571428571vw;
   border-top: 1px solid black;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .about .about__inner .about__detail-block .about__header .about__border {
+    width: 10.6666666667vw;
+  }
 }
 .about .about__inner .about__detail-block .about__text {
   font-size: 1vw;
+}
+@media screen and (max-width: 768px) {
+  .about .about__inner .about__detail-block .about__text {
+    font-size: 3.7333333333vw;
+  }
 }
 
 .business .business__inner {
@@ -707,6 +762,7 @@ svg {
 .business .business__inner .business__header .business__border {
   width: 2.8571428571vw;
   border-top: 1px solid black;
+  display: block;
 }
 .business .business__inner .business__list {
   display: flex;
@@ -768,17 +824,16 @@ svg {
 }
 
 .company .company__inner {
-  padding: 0 0 7.8571428571vw 14.2857142857vw;
+  padding: 0 14.2857142857vw 7.8571428571vw 14.2857142857vw;
 }
 .company .company__inner .company__detail-block {
   display: flex;
-  justify-content: space-between;
 }
 .company .company__inner .company__detail-block .company__detail {
   width: 40.5vw;
   height: 45.7142857143vw;
   background-color: white;
-  padding: 7.8571428571vw 0 7.4285714286vw 4.4285714286vw;
+  padding: 7.8571428571vw 10.2142857143vw 7.4285714286vw 4.4285714286vw;
 }
 .company .company__inner .company__detail-block .company__detail .company__header {
   margin-bottom: 3.7857142857vw;
@@ -795,6 +850,7 @@ svg {
 .company .company__inner .company__detail-block .company__detail .company__header .company__border {
   width: 2.8571428571vw;
   border-top: 1px solid black;
+  display: block;
 }
 .company .company__inner .company__detail-block .company__detail .company__detail-list .detail-item {
   display: flex;
@@ -815,12 +871,10 @@ svg {
 .company .company__inner .company__detail-block .company__img-block {
   width: 39.0714285714vw;
   height: 45.7142857143vw;
-  position: relative;
 }
-.company .company__inner .company__detail-block .company__img-block .company__ing {
-  position: absolute;
-  right: 14.2857142857vw;
-  top: 8.2142857143vw;
+.company .company__inner .company__detail-block .company__img-block .company__img {
+  margin-top: 8.2142857143vw;
+  margin-left: -114px;
   width: 39.0714285714vw;
   height: 28.5714285714vw;
   -o-object-fit: cover;
