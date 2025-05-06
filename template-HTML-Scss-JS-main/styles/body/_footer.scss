@@ -5,28 +5,50 @@
 
 .footer {
     height: vw(209);
-    background-color: white;
+    @include sp(){
+        height: vw_sp(254);
+    }
     .footer__inner {
         padding: vw(44) vw(219) vw(22) vw(200);
+        background-color: white;
+        @include sp(){
+            padding: vw_sp(40) 0 0 vw_sp(16); 
+        }
 
         .footer__main {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include sp(){
+                display: block;
+            }
             .footer__logo {
                 .logo {
                     width: vw(100.39);
+                    @include sp(){
+                        width: vw_sp(80.05);
+                        margin-bottom: vw_sp(14.52);
+                    }
                 }
             }
             .footer__adress {
+                @include sp(){
+                    margin-bottom: vw_sp(40);
+                }
                 .adress {
                     font-size: vw(14);
+                    @include sp(){
+                        font-size: vw_sp(14);
+                    }
                 }
             }
         }
         .footer__copyright {
             .copyright {
                 font-size: vw(12);
+                @include sp() {
+                    font-size: vw_sp(12);
+                }
             }
         } 
     }
