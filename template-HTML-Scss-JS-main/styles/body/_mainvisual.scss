@@ -7,4 +7,8 @@
     height: vw(600);
     width: vw(1400);
     object-fit: cover;
+    @include sp(){
+        width: vw_sp(375);
+        height: vw_sp(600);
+    }
 }

@@ -1,0 +1,81 @@
+@charset "utf-8";
+@use "../common/functions" as *;
+@use "../common/variables" as *;
+@use "../common/mixins" as *;
+
+.about {
+    .about__inner {
+        display: flex;
+        gap: vw(70);
+        padding: 0 vw(97) vw(134) 0;
+
+        @include sp(){
+            display: block;
+            padding: 0 0 vw_sp(94) 0;
+        }
+
+        .about__img-block {
+            width: vw(760);
+            height: vw(400);
+            @include sp() {
+                width: vw_sp(375);
+                height: vw_sp(300);
+            }
+            .about__img {
+                width: vw(760);
+                height: vw(400);
+                object-fit: cover;
+                @include sp() {
+                    width: vw_sp(375);
+                    height: vw_sp(300);
+                }
+            }
+        }
+        .about__detail-block {
+            width: vw(640);
+            padding: vw(200) vw_sp(16) 0 vw_sp(16);
+            @include sp() {
+                width: 100%;
+            }
+
+            .about__header {
+                margin-bottom: vw(53);
+          
+                .about__title {
+                  font-size: vw(36);
+                  letter-spacing: vw(10.8);
+                  margin-bottom: vw(21);
+                  @include sp(){
+                    font-size: vw_sp(36);
+                    letter-spacing: vw_sp(10.8);
+                    margin-bottom: vw_sp(21);
+                  }
+                }
+          
+                .about__subtitle {
+                  font-size: vw(14);
+                  margin-bottom: vw(40);
+                  @include sp(){
+                  font-size: vw_sp(14);
+                  margin-bottom: vw_sp(40);
+                  }
+                }
+          
+                .about__border {
+                  width: vw(40);
+                  border-top: 1px solid black;
+                  display: block; 
+                  @include sp(){
+                    width: vw_sp(40);
+                  }
+                }
+            }
+            .about__text {
+                font-size: vw(14);
+                @include sp(){
+                    font-size: vw_sp(14);
+                }
+            }
+        }
+    }
+}

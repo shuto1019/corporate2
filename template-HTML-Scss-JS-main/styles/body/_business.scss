@@ -1,0 +1,102 @@
+@charset "utf-8";
+@use "../common/functions" as *;
+@use "../common/variables" as *;
+@use "../common/mixins" as *;
+
+.business {
+    .business__inner {
+        padding: 0 vw(300) vw(120) vw(200);
+        @include sp(){
+            padding: 0 vw_sp(16) vw_sp(80) vw_sp(16);
+        }
+
+        .business__header {
+            margin-bottom: vw(53);
+            @include sp(){
+                margin-bottom: vw_sp(53);
+            }
+      
+            .business__title {
+              font-size: vw(36);
+              letter-spacing: vw(10.8);
+              margin-bottom: vw(21);
+              @include sp() {
+                font-size: vw_sp(36);
+                letter-spacing: vw_sp(10.8);
+                margin-bottom: vw_sp(21);
+              }
+            }
+      
+            .business__subtitle {
+              font-size: vw(14);
+              margin-bottom: vw(40);
+              @include sp() {
+                font-size: vw_sp(14);
+                margin-bottom: vw_sp(40);
+              }
+            }
+      
+            .business__border {
+              width: vw(40);
+              border-top: 1px solid black;
+              display: block; 
+              @include sp() {
+                width: vw_sp(40);
+                border-top: 1px solid black;
+              }
+            }
+        }
+        .business__list {
+            display: flex;
+            justify-content: center;
+            gap: vw(64);
+            @include sp() {
+               flex-direction: column;
+            }
+            .business__items {
+                display: flex;
+                flex-direction: column;
+                gap: vw(64);
+                .business__item {
+                    .item-title {
+                        font-size: vw(14);
+                        margin-bottom: vw(13);
+                        padding-left: vw(18);
+                        position: relative;
+                        @include sp(){
+                            font-size: vw_sp(14);
+                            margin-bottom: vw_sp(13);
+                            padding-left: vw_sp(18);
+                        }
+                    }
+                    .item-title::before {
+                        content: '';
+                        display: block;
+                        width: vw(7); 
+                        height: 1px; 
+                        background-color: black; 
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        @include sp(){
+                            width: vw_sp(7);
+                        }
+                    }
+                    .item-img {
+                        width: vw(368);
+                        height: vw(232);
+                        object-fit: cover;
+                        @include sp(){
+                            width: vw_sp(343);
+                            height: vw_sp(232);
+                        }
+                    }
+                }
+            }
+            .paddding__top-100 {
+                padding-top: vw(100);
+            }
+        }
+    }
+}
